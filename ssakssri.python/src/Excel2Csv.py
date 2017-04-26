@@ -10,6 +10,7 @@ def csv_from_excel():
 
     wb = xlrd.open_workbook('/Users/ssakssri/Downloads/picklist.xlsx')
     sh = wb.sheet_by_name('csv')
+    
     your_csv_file = open('/Users/ssakssri/Downloads/picklist.csv', 'w', encoding='utf-8')
     wr = csv.writer(your_csv_file, quoting=csv.QUOTE_ALL)
 
@@ -18,7 +19,7 @@ def csv_from_excel():
 
     your_csv_file.close()
 
-
+# replace float value to string
 def localize_floats(row):
     return [
         str(el).replace('.0', '') if isinstance(el, float) else el 
