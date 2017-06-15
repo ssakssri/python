@@ -9,7 +9,7 @@ import csv
 def csv_from_excel():
 
 #    inFile = 'C:/Users/ssakssri.DSG/Desktop/jobrole_w1.xlsx'
-    inFile = 'C:/Users/ssakssri.DSG/Downloads/jobProfile3.xlsx'
+    inFile = 'C:/Users/ssakssri.DSG/Downloads/jobFamily.xlsx'
 
     outFile = 'C:/Users/ssakssri.DSG/Desktop/jobProfile.csv'
 

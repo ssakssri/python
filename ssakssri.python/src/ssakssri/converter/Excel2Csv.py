@@ -17,8 +17,8 @@ def csv_from_excel():
 #    xls = sys.argv[1]
 #    target = sys.argv[2]
 
-    xls = 'C:/Users/ssakssri.DSG/Downloads/jobProfile3.xlsx'
-    target = 'C:/Users/ssakssri.DSG/Desktop/jobProfile.csv'
+    xls = 'C:/Users/ssakssri.DSG/Downloads/jobFamily.xlsx'
+    target = xls.replace(".xlsx", ".csv")
 
     logging.info("Start converting: From '" + xls + "' to '" + target + "'. ")
 
