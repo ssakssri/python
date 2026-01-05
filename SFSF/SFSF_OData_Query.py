@@ -174,10 +174,10 @@ class SAPSuccessFactorsAPI:
 if __name__ == "__main__":
     # 1. 설정 정보 입력
     CONFIG = {
-        "client_id": "YOUR_API_KEY",           # OAuth Client ID (API Key)
-        "company_id": "YOUR_COMPANY_ID",       # SuccessFactors Company ID
-        "user_id": "admin_user",               # API를 실행할 실제 계정 ID
-        "private_key_path": "my_private.pem",  # 로컬에 저장된 Private Key 파일 경로
+        "client_id": "YzM1MDYxN2VmNjcxMjdmZmNmYjcwMzI0MDI5NQ",           # OAuth Client ID (API Key)
+        "company_id": "hyundaia02T2",       # SuccessFactors Company ID
+        "user_id": "ssakssri",               # API를 실행할 실제 계정 ID
+        "private_key_path": "/Users/jeongsucklee/DevOps_SSakSSri/Python/ssakssri.python/python/ssakssri.python/src/ssakssri/sfsf/cert/Certificate.pem",  # 로컬에 저장된 Private Key 파일 경로
         "base_url": "https://api50preview.sapsf.com"
     }
 
@@ -191,7 +191,7 @@ if __name__ == "__main__":
     )
 
     # 3. 데이터 조회 (User: EY001)
-    target_user = "EY001"
+    target_user = "ssakssri"
     user_data = sf_api.get_user_data(target_user)
 
     # 4. 결과 출력
